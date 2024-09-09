@@ -1,0 +1,147 @@
+/* thead{
+    border: none !important;
+} */
+.sorted{
+    color: #262626;
+    font-size: medium;
+    font-weight:500;
+ }
+.mainTitle{
+color: #262626;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom:10px;
+    margin-left: 20px;
+}
+.active {
+    color: #01a84d;
+  }
+  
+  .expired {
+    color: #e45959;
+  }
+ 
+.aplicant{
+    color: #262626;
+    font-size: small;
+}
+.icons{
+    margin-left: 20px;
+}
+.parent{
+    border: 1px solid #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 10px 20px -5px rgba(6, 36, 92, 0.06);
+     padding: 40px;
+     /* margin: 20px; */
+     /* background-color: #01a84d; */
+}
+
+/* .header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #989DA6;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+} */
+.tableTh{
+    font-size: medium;
+    color: #262626;
+    /* justify-content: space-between; */
+}
+.selectorOption{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.selectOption{
+    border-radius: 8px;
+    border: 1px solid #B4E0D3;
+    color:#989DA6 ;
+    margin-left: 5px;
+}
+.theTable{
+    border: 1px solid #B4E0D3;
+    border-radius: 16px !important;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.jobRequirements{
+    display: flex;
+    flex-wrap: wrap;
+}
+.jobRequirements .requirement{
+    background-color: #DAEFF2;
+    padding: 7px;
+    color: #727272;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.jobTitle{
+    font-size: 16px;
+    font-weight: bold;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .additional-icons {
+    display: flex;
+    margin-left: 10px;
+    
+  }
+  
+  .additional-icons i {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .pagination{
+    margin-top: 30px;
+  }
+
+  .pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* .pagination a.page {
+    border: 1px solid #ddd;
+
+} */
+
+.pagination a.prev,
+.pagination a.next {
+    background: linear-gradient(to right, #F9FFFE, #E7FFE0);
+
+}
+
+.pagination a.active {
+    background-color: #96E3B9 ;
+    color: white;
+    
+}
+
+.pagination a:hover {
+    background-color: #e0e0e0;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .active {
+    font-weight: bold;
+  }

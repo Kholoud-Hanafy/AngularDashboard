@@ -1,0 +1,97 @@
+<app-nav-bar></app-nav-bar>
+<div *ngIf="selectedCompany">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar">
+            <div class="profile">
+                <img src="selectedCompany.companyLogo "alt="">
+                <h5>{{ selectedCompany.companyName }}</h5>
+                <p>{{ selectedCompany.companyIndustry }}</p>
+                <button class="share-btn">Share</button>
+              </div>
+              
+            <div class="details">
+              <p class="paraBackground"><i class="fa-solid fa-location-dot"></i> {{ selectedCompany.city }}, {{ selectedCompany.state }}</p>
+              <p class="paraBackground"><i class="fa-solid fa-envelope"></i> <a [href]="selectedCompany.companyEmail">{{ selectedCompany.companyEmail }}</a></p>
+              <p class="paraBackground"><i class="fa-solid fa-user"></i> {{ selectedCompany.companySize }} </p>
+              <p class="paraBackground"><i class="fa-solid fa-calendar"></i> {{ selectedCompany.foundedYear }} 
+                <!-- {{ selectedCompany.createdAt | date:'yyyy' }} -->
+            </p>
+            </div>
+            <hr class="breakLine">
+            <div class="contact-info">
+              <h6 class="contactTitle">Contact Info</h6>
+              <p class="paraBackground"><i class="fa-solid fa-phone"></i>{{ selectedCompany. phone }} </p>
+              <p class="paraBackground"><i class="fa-solid fa-envelope"></i> <a [href]="'mailto:' + selectedCompany.companyEmail">{{ selectedCompany.companyEmail }}</a></p>
+            </div>
+            <hr class="breakLine">
+            <div class="social-media">
+              <h6 class="social">Social Media</h6>
+              <p class="socialIcons">
+                <i class="fa-brands fa-square-facebook icon" style="color: #01a84d;"></i>
+                <i class="fa-brands fa-linkedin icon" style="color: #01a84d;"></i>
+                <i class="fa-brands fa-square-instagram icon" style="color: #01a84d;"></i>
+              </p>
+            </div>
+          </div>
+          <!-- <div class="other-candidates">
+            <p class="OtherCandidatesTitle">Other Candidates</p>
+            <div class="candidate">
+              <img src="/2.svg" alt="Candidate">
+              <div class="companyContent">
+                <p class="companyName">Julia Ark</p>
+                <p class="companyCareer">Graphic Designer</p>
+              </div>
+            </div>
+            <button class="show-more-btn">Show More</button>
+          </div> -->
+        </div>
+        <div class="col-md-8">
+          <div class="card shadow-sm p-4 mb-4 bg-light rounded">
+            <div class="arrowLeft"></div>
+            <h2 class="cardTitle">{{ selectedCompany.companyName }}</h2>
+            <div class="cardSubtitleContainer">
+              <p class="cardPara">Industry:</p>
+              <h3 class="cardSubtitle">{{ selectedCompany.companyIndustry }}</h3>
+            </div>
+            <div class="cardSubtitleContainer">
+              <p class="cardPara">Founded Year:{{ selectedCompany.foundedYear }}</p>
+              <!-- <h3 class="cardSubtitle">{{ selectedCompany.createdAt | date:'yyyy' }}</h3> -->
+            </div>
+            <div class="cardSubtitleContainer">
+              <p class="cardPara">Phone:</p>
+              <h3 class="cardSubtitle">{{ selectedCompany. phone }}</h3>
+            </div>
+          </div>
+          <div class="company-overview">
+            <h5 class="titleOverview">Overview</h5>
+            <!-- <h5 class="titleOverview">{{ selectedCompany.companyOverview }}</h5> -->
+            <p>Privately held mergers and acquisitions firm focused on media and technology assets...</p>
+          </div>
+          <!-- <div *ngIf="selectedCompany">
+            <div class="vacancy">
+              <p class="vacancyTitle">Open vacancies at {{ selectedCompany.companyName }}</p>
+              <div class="job-card" *ngFor="let job of jobs">
+                <div class="imgTitle">
+                  <h6>{{ job.JobTitle }}</h6>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16,2H8A3,3,0,0,0,5,5V21a1,1,0,0,0,.5.87,1,1,0,0,0,1,0L12,18.69l5.5,3.18A1,1,0,0,0,18,22a1,1,0,0,0,.5-.13A1,1,0,0,0,19,21V5A3,3,0,0,0,16,2Zm1,17.27-4.5-2.6a1,1,0,0,0-1,0L7,19.27V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z"></path>
+                  </svg>
+                </div>
+                <span class="time"><i class="fa-regular fa-clock" style="color: #989DA6"></i> {{ job.timeStamp }}</span>
+                <div class="requirments">
+                  <span class="require">{{ job.JobType }}</span>
+                </div>
+                <p>{{ job.description }}</p>
+              </div>
+              <button class="btn btn-success btn-block mt-3">Show More</button>
+            </div>
+          </div> -->
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>

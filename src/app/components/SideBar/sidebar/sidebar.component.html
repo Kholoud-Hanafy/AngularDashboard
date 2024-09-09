@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav class="d-flex flex-column vh-100 sidebar col-3">
+      <div class="flex-column mt-4 w-85 dashboard-container">
+      
+        <div class="d-flex align-items-center element" [class.active]="activeItem === 'post-job'" (click)="handleItemClick('post-job')">
+          <span *ngIf="activeItem === 'post-job'" class="active-flag"></span>
+          
+          <a class="nav-link" [class.active]="activeItem === 'post-job'" routerLink="/Company/addJob">
+           <img src="Edit.svg" alt="" /> <span class="text">Post Job</span>
+          </a>
+        </div>
+        <div class="d-flex align-items-center element" [class.active]="activeItem === 'my-jobs'" (click)="handleItemClick('my-jobs')">
+          <span *ngIf="activeItem === 'my-jobs'" class="active-flag"></span>
+          
+          <a class="nav-link" [class.active]="activeItem === 'my-jobs'" routerLink="/Company/theJobs">
+          <img src="office bag.svg" alt="" />  <span class="text">My Jobs</span>
+          </a>
+        </div>
+      
+        <!-- <div class="d-flex align-items-center element" [class.active]="activeItem === 'SavedCandidates'" (click)="handleItemClick('SavedCandidates')">
+          <span *ngIf="activeItem === 'SavedCandidates'" class="active-flag"></span>
+          <img src="bookmark.svg" alt="" />
+          <a class="nav-link" [class.active]="activeItem === 'SavedCandidates'" routerLink="/Company/candidates">
+            <span class="text">Saved Candidates</span>
+          </a>
+        </div> -->
+        <div class="d-flex align-items-center element" [class.active]="activeItem === 'setting'" (click)="handleItemClick('setting')">
+          <span *ngIf="activeItem === 'setting'" class="active-flag"></span>
+          
+          <a class="nav-link" [class.active]="activeItem === 'setting'" routerLink="/Company/reset">
+            <img src="Setting.svg" alt="" /><span class="text">Setting</span>
+          </a>
+        </div>
+        <div class="d-flex align-items-center element" [class.active]="activeItem === 'log-out'" (click)="handleItemClick('log-out')">
+          <span *ngIf="activeItem === 'log-out'" class="active-flag"></span>
+          
+          <a class="nav-link" [class.active]="activeItem === 'log-out'" routerLink="/home" (click)="logOut()" >
+           <img src="Logout.svg" alt="" /> <span class="text"> Log Out</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

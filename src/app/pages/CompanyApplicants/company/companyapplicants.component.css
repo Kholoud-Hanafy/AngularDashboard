@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.background{
+  background-color:var(--background);
+ /* height: max-content; */
+ /* height: 100%; */
+}
+.row{
+  padding-left:0 !important;
+}
